@@ -3,6 +3,7 @@ var router = express.Router();
 const applicationController = require("../controller/application")
 const usersController = require('../controller/users')
 const skillsController = require('../controller/skills')
+const tasksController = require('../controller/tasks')
 // const bodyparser = require('body-parser')
 
 
@@ -41,6 +42,13 @@ router.delete('/skills/:id', skillsController.delete)
 
 
 //task
+
+router.get('/tasks', tasksController.index)
+router.get ('/tasks/new', tasksController.new)
+router.get ('/tasks/:id', tasksController.show)
+router.post('/tasks', tasksController.create) 
+router.get('/tasks/:id/edit', tasksController.edit) 
+router.patch('/tasks/:id', tasksController.update)
 
 
 
