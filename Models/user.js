@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 
 
-const UserSchema = new Schema ({    
+const User = new Schema ({    
     name: String,
     email:String,
     password:String,
@@ -16,4 +16,4 @@ const UserSchema = new Schema ({
 })
 
 
-module.exports = mongoose.model ('User', UserSchema);
+module.exports = mongoose.model ('User', User);

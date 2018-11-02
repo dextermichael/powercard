@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const applicationController = require("../controller/application")
-// const usersController = require('../controller/users')
+const usersController = require('../controller/users')
 // const bodyparser = require('body-parser')
 
 
@@ -14,7 +14,7 @@ router.get('/', applicationController.index)
 
 //User controller 
 
-// router.get('/users', userController.index)
+router.get('/users', usersController.index)
 
 // create 
 
