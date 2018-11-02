@@ -40,17 +40,7 @@ router.patch('/skills/:id', skillsController.update)
 router.delete('/skills/:id', skillsController.delete)
 
 
-
-
-
-
-
-
-
-
-
- 
-
+//task
 
 
 

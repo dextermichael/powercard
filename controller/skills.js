@@ -3,7 +3,7 @@ const Skill = require('../models/Skill')
 
 const skillsController = {
   index: (req, res) => {
-    Event.find({}).populate('skills')
+    Skill.find({}).populate('skills')
       .then((skills) => {
         res.render('skills/index', {
           skills: skills
@@ -17,27 +17,27 @@ const skillsController = {
   },
   show: (req, res) => {
     Skill.findById(req.params.id)
-      .then(event => {
-        res.render('skills/show', { event: event })
+      .then(skill => {
+        res.render('skills/show', { skill: skill })
       })
   },
 
   create: (req, res) => {
-    Skill.create(req.body).then((newEvent) => {
-      res.redirect(`/skills/${newEvent._id}`)
+    Skill.create(req.body).then((newSkill) => {
+      res.redirect(`/skills/${newSkill._id}`)
     })
   },
 
 
   edit: (req, res) => {
-    Skill.findById(req.params.id).then(event => {
-      res.render('skills/edit', { event: event })
+    Skill.findById(req.params.id).then(skill => {
+      res.render('skills/edit', { skill: skill })
     })
   },
 
   update: (req, res) => {
-    Skill.findByIdAndUpdate(req.params.id, req.body).then((updatedEvent) => {
-      res.redirect(`/skills/${updatedEvent._id}`)
+    Skill.findByIdAndUpdate(req.params.id, req.body).then((updatedSkill) => {
+      res.redirect(`/skills/${updatedSkill._id}`)
     })
   },
 
