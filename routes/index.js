@@ -13,12 +13,30 @@ router.get('/', applicationController.index)
 
 
 //User controller 
-
 router.get('/users', usersController.index)
+// 
+router.get('/users/new',usersController.new)
+//show
+router.get('users/:id',usersController.show)
+//
+router.get('users/:id/edit', usersController.edit)
+//create
+router.get('/users', usersController.create)
+// delete
+router.delete('/users/:id', usersController.delete)
+// update
+router.patch('/users/:id', usersController.update)
 
-// create 
 
-// router.get("/users/new", usersController.new)
+
+
+
+
+
+
+
+
+
  
 
 
