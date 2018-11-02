@@ -19,11 +19,16 @@ const User = new Schema ({
         
     },
 
+    skill:{
+
+        type:String
+    }
+
     
-    skill: [{ 
-        ability:String,
+    // skill: [{ 
+    //     ability:String,
         
-    }],
+    // }],
     
 })
 
