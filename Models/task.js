@@ -5,6 +5,7 @@ const Schema = mongoose.Schema
 
 const Task = new Schema({
     name: String,
+    duration: String
   
     
 })
