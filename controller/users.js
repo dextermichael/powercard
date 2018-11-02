@@ -1,6 +1,6 @@
 const User = require('../models/User')
 
-
+//show users
 const UsersController= {
     index:(req, res) => {
         User.find({}).populate('users')

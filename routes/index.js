@@ -15,6 +15,10 @@ router.get('/', applicationController.index)
 //User controller 
 
 router.get('/users', userController.index)
+
+// create 
+
+router.get("/users/new", usersController.new)
  
 
 
