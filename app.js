@@ -4,11 +4,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const bodyparser = require('body-parser')
+var methodOverride = require('method-override')
 
 var index = require('./routes/index');
 
 
 var app = express();
+app.use(methodOverride('_method'))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
