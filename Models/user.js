@@ -3,17 +3,17 @@ const Schema = mongoose.Schema
 
 
 
-const User = new Schema ({
-    
-    name:String,
+
+const UserSchema = new Schema ({    
+    name: String,
     email:String,
     password:String,
     skills:[{
-        type :Schema.Types.ObjectId,
+        type:Schema.Types.ObjectId,
         ref: "Skill"
     }]
     
 })
 
 
-module.exports = mongoose.model ('User', User)
+module.exports = mongoose.model ('User', UserSchema);
