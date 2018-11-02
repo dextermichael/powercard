@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const applicationController = require("../controller/application")
+const userController = require('../controller/users')
 const bodyparser = require('body-parser')
 
 
@@ -9,5 +10,14 @@ const bodyparser = require('body-parser')
 
 /* GET home page. */
 router.get('/', applicationController.index)
+
+
+//User controller 
+
+router.get('/users', userController.index)
+ 
+
+
+
 
 module.exports = router;
