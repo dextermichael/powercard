@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    {{{body}}}
-  </body>
+<html lang="en">
+<head>
+  {{!-- <title>{{title}}</title> --}}
+  <meta charset="UTF-8">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <link rel='stylesheet' href='/public/stylesheets/style.css' />
+  
+  
+  
+  <title>PowerCard</title>
+
+</head>
+<body>
+  <nav class="navbar is-danger">
+    <div class="container">
+      <div class="navbar-brand"> 
+        <a class= "navbar-item" href="#" style="font-weight:bold;">
+          POWERCARD
+          </a>
+          <span class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+           </span>
+           </div>
+           <div id="navMenu"class="navbar-menu">
+             <div class="navbar-end">
+               <a href="/" class="navbar-item is-active">Home</a>
+               <a href="/users/new/" class="navbar-item">Sign Up</a>
+               <a href="#" class="navbar-item">Log in</a>
+             
+          </div>
+       </div>
+    </div>
+  </nav>
+
+
+  {{{body}}}
+  {{!-- <script src="../public/javascripts/navbar.js""></script> --}}
+</body>
+
+
 </html>
+
+

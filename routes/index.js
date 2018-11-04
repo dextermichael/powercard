@@ -12,6 +12,7 @@ const tasksController = require('../controller/tasks')
 
 /* GET home page. */
 router.get('/', applicationController.index)
+// router.get('/users',usersController.index)
 
 
 //User controller 
@@ -30,25 +31,25 @@ router.delete('/users/:id', usersController.delete)
 router.patch('/users/:id', usersController.update)
 
 
-//Skill
+// //Skill
 
-router.get ('/skills', skillsController.index)
-router.get ('/skills/new', skillsController.new)
-router.get ('/skills/:id', skillsController.show)
-router.get('/skills/:id/edit', skillsController.edit) 
-router.post('/skills', skillsController.create) 
-router.patch('/skills/:id', skillsController.update)
-router.delete('/skills/:id', skillsController.delete)
+// router.get ('/skills', skillsController.index)
+// router.get ('/skills/new', skillsController.new)
+// router.get ('/skills/:id', skillsController.show)
+// router.get('/skills/:id/edit', skillsController.edit) 
+// router.post('/skills', skillsController.create) 
+// router.patch('/skills/:id', skillsController.update)
+// router.delete('/skills/:id', skillsController.delete)
 
 
-//task
+// //task
 
-router.get('/tasks', tasksController.index)
-router.get ('/tasks/new', tasksController.new)
-router.get ('/tasks/:id', tasksController.show)
-router.post('/tasks', tasksController.create) 
-router.get('/tasks/:id/edit', tasksController.edit) 
-router.patch('/tasks/:id', tasksController.update)
+// router.get('/tasks', tasksController.index)
+// router.get ('/tasks/new', tasksController.new)
+// router.get ('/tasks/:id', tasksController.show)
+// router.post('/tasks', tasksController.create) 
+// router.get('/tasks/:id/edit', tasksController.edit) 
+// router.patch('/tasks/:id', tasksController.update)
 
 
 

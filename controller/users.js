@@ -3,7 +3,7 @@ const Skill = require('../models/Skill')
 
 const usersController = {
   index: (req, res) => {
-    User.find({}).populate('users')
+    User.find({}).populate('skills')
       .then((users) => {
         res.render('users/index', {
           users: users
@@ -18,7 +18,7 @@ const usersController = {
   },
   show: (req, res) => {
     const userId = req.params.id
-    User.findById(userId).populate('events')
+    User.findById(userId).populate('skills')
       .then(user => {
         res.render('users/show', { user: user })
       })
