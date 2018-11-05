@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-const applicationController = require("../controller/application")
-const usersController = require('../controller/users')
-const skillsController = require('../controller/skills')
-const tasksController = require('../controller/tasks')
+const applicationController = require("../controller/Application")
+const usersController = require('../controller/Users')
+const skillsController = require('../controller/Skills')
+const tasksController = require('../controller/Tasks')
 // const bodyparser = require('body-parser')
 
 
