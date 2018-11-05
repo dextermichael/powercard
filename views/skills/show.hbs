@@ -3,8 +3,15 @@
  <div class="sc">
  <h2>{{skills.name}}</h2>
 
-  
-  <p>Task: {{skill.task}}</p>
+  <div class="column">
+  <p>Task: {{#each skill.task}}</p>
+  <div>
+  <h2> {{name}} </h2>
+  <h2>{{duration}}</h2>
+  </div>
+
+  {{/each}}
+  </div>
 
 
   <form action="/skills/{{skill._id}}/edit" method="PATCH">
@@ -18,6 +25,5 @@
 
   
   
-</div>
-</div>
 
+</div>

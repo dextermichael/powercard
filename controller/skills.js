@@ -18,7 +18,8 @@ const skillsController = {
   show: (req, res) => {
     Skill.findById(req.params.id)
       .then(skill => {
-        res.render('skills/show', { skill: skill })
+        res.render('skills/show', { skill: skill,})
+
       })
   },
 
