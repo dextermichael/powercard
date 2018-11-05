@@ -20,10 +20,11 @@ form .field {
 	max-width: 740px;
 } */
 
-.image{
+.images{
 
 	display: flex;
 	justify-content: center;
+	text-align: center;
 	height: 128px;
 	width:128px;
 
@@ -33,5 +34,63 @@ form .field {
 .test{
 
 text-align: center;
+
+}
+
+.users{
+
+text-align: center;
+font-size: 40px;
+
+
+}
+
+
+
+.tit{
+	font-size: 60px;
+	color:red;
+
+
+}
+
+.containers{
+	display: flex;
+
+	justify-content:center;
+	align-items:center;
+
+}
+
+.png{
+
+	height: 300px;
+	width: 300px;
+	
+}
+
+.skillst{
+
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+
+
+}
+
+.Skillin{
+	font-size: 60px;
+
+
+}
+
+.newskill{
+
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+
 
 }
