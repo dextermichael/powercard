@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const applicationController = require("../controller/Application")
+const applicationController = require('../controller/Application')
 const usersController = require('../controller/Users')
 const skillsController = require('../controller/Skills')
 const tasksController = require('../controller/Tasks')
