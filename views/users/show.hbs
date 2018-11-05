@@ -1,0 +1,29 @@
+<main>
+  <h1>{{user.name}}'s </h1>
+
+
+  <h3>Skills </h3>
+
+  <br>
+  {{!-- grab all users and show their specific events by name --}}
+
+  {{#each user.skills}}
+  <h3>
+    <a href="/skills/{{this._id}}">
+      {{name}}
+    </a>
+  </h3>
+  {{/each}}
+  <br>
+
+  <form action="/users/{{user._id}}/edit" method="PATCH">
+
+    <button class="btn btn-primary"> Edit Profile</button>
+  </form>
+
+  <br>
+
+  <a href="/users"><button class="btn btn-secondary">Back to list</button></a>
+
+
+</main>

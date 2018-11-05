@@ -2,7 +2,21 @@
 
 
 
-<div id="app">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div id="app">
   <div class="section">
     <div class="container">
       <div class="media is-pulled-right">
@@ -19,12 +33,8 @@
       </div>
       <div class="title">Sign Up</div>
       <div class="subtitle">With Your Email</div>
-      <form id="register-form">
+      <form action="/users/{{users_.id}}" method="POST" id="register-form">
         <div class="field">
-          {{!-- <label class="label" for="username">Username</label>
-          <div class="control has-icons-left">
-            <input class="input" type="text" placeholder="Username" name="username"/><span class="icon is-left"><i class="fa">user</i></span>
-          </div> --}}
           <label class="label" for="email">Email</label>
           <div class="control has-icons-left">
             <input class="input" type="email" placeholder="Email" name="email"/><span class="icon is-left"><i class="fa">envelope-square</i></span>
@@ -35,9 +45,9 @@
 
           <div class="columns row-one">
             <div class="column">
-              <label class="label" for="firstName">First Name</label>
+              <label class="label" for="firstName">Name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="First Name" name="firstName"/>
+                <input class="input" type="text" placeholder="name" name="name"/>
               </div>
             </div>
             <div class="column">
@@ -61,7 +71,7 @@
           </div>
           <div class="field is-grouped">
             <div class="control">
-              <button class="button is-medium">Login</button>
+              {{!-- <button class="button is-medium">Login</button> --}}
             </div>
             <div class="control">
               <button class="button is-danger is-medium" type="submit">Register</button>
@@ -72,4 +82,4 @@
     </div>
   </div>
 </div>  
-
+ 

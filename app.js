@@ -6,21 +6,25 @@ var logger = require('morgan');
 const bodyparser = require('body-parser')
 var methodOverride = require('method-override')
 
+
 var index = require('./routes/index');
 
 
 var app = express();
 app.use(methodOverride('_method'))
+app.use(bodyparser());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+app.use(express.static('public/images')); 
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/public'))
 
 app.use('/', index);
 

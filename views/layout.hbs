@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-  <link rel='stylesheet' href='/public/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
   
   
   
@@ -18,7 +19,8 @@
   <nav class="navbar is-danger">
     <div class="container">
       <div class="navbar-brand"> 
-        <a class= "navbar-item" href="#" style="font-weight:bold;">
+        <a class= "navbar-item" href="/" style="font-weight:bold;">
+        
           POWERCARD
           </a>
           <span class="navbar-burger burger" data-target="navMenu">
@@ -30,8 +32,10 @@
            <div id="navMenu"class="navbar-menu">
              <div class="navbar-end">
                <a href="/" class="navbar-item is-active">Home</a>
+               <a href="/users{{users_.id}}" class="navbar-item">Users</a>
                <a href="/users/new/" class="navbar-item">Sign Up</a>
-               <a href="#" class="navbar-item">Log in</a>
+               <a href="/skills/{{user.skills}}" class="navbar-item">Skills</a>
+               
              
           </div>
        </div>
