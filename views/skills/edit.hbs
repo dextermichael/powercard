@@ -1,0 +1,48 @@
+<h1>{{title}}</h1>
+<div class="se">
+<main>
+
+
+  
+
+<br>
+    <div class="sn">
+  <h2>Edit Skills</h2>
+  </div>
+
+
+<div class="sforms">
+  {{!-- form to update event information --}}
+  <form action="/skills/{{skill._id}}?_method=PATCH" method="POST">
+    
+
+
+
+    <div class="field">
+  <div class="control">
+    
+    <input class="input is-danger" name="name" type="text"  value="{{skill.name}}" placeholder="New Skill">
+  </div>
+</div>
+
+    
+    
+
+<div class="field">
+  <div class="control">
+    
+    <input class="input is-danger" name="name" type="text"  value="{{skill.task}}" placeholder="New Skill">
+  </div>
+</div>
+
+   
+  </form>
+ 
+  <form action="/skills/{{skill._id}}?_method=DELETE" method="POST">
+    <button type="submit" class="button is-danger">Delete Skills</button>
+  </form>
+  </div>
+
+</div>
+</main>
+</div>

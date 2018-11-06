@@ -1,21 +1,21 @@
 
 <div class="newskill">
 <main >
-
+<div class="cns">
     <h3>Create New SKill</h3>
+    </div>
 
     {{!-- create a new skill --}}
-    <form action="/skills{{skills_.id}}" method="POST">
-        <div>
-            <label for="name">name: </label>
-            <input type="text" name="name">
-        </div>
-     
-        <div>
-            <label for="task">task: </label>
-            <input type="text" name='task'>
-        </div>
-        <button type="submit" class="btn btn-success">Save Skill</button>
+    <form action="/skills/{{skills_.id}}" method="POST">
+       
+
+     <div class="field">
+  <div class="control">
+    <input class="input is-danger" name="name" type="text" placeholder="New Skill">
+  </div>
+</div>
+       
+        <button type="submit" class="button is-danger">Save Skill</button>
     </form>
 
 </main>

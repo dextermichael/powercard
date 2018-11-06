@@ -1,29 +1,31 @@
- <div class="ss">
- 
- <div class="sc">
- <h2>{{skills.name}}</h2>
 
-  <div class="column">
-  <p>Task: {{#each skill.task}}</p>
-  <div>
-  <h2> {{name}} </h2>
-  <h2>{{duration}}</h2>
+
+<div class="se">
+<main>
+
+  {{!-- show event name and details --}}
+<div class="skilln">
+  <h2>{{skill.name}}</h2>
   </div>
 
-  {{/each}}
-  </div>
+  
+  
+  {{!-- <p>Equipment: {{skills.task}}</p> --}}
 
-
+<div class="sb">
   <form action="/skills/{{skill._id}}/edit" method="PATCH">
-    <button class="btn btn-primary">Edit Skills</button>
+    <button class="button is-danger is-outlined">Edit Skill </button>
+    
   </form>
 
   <br>
-  <a href="/skills/new"> <button class="btn btn-success">Add New Skills</button></a>
+  
+  <a href="/skills/new" class="button is-danger is-outlined">New Skill</a>
   <br>
   <br>
 
-  
-  
+  </div>
 
+  
+</main>
 </div>

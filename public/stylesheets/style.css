@@ -104,3 +104,47 @@ font-size: 40px;
 
 
 }
+
+.section{
+
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+}
+
+.middle {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+
+}
+
+.se{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+
+
+
+}
+
+
+
+.skilln{
+
+	font-size: 60px;
+
+
+}
+
+.sn{
+
+	font-size: 60px;
+}
+
+.cns{
+	font-size: 60px;
+}
