@@ -1,5 +1,5 @@
-const User = require('../models/User')
-const Skill = require('../models/Skill')
+const User = require('../Models/User')
+const Skill = require('../Models/Skill')
 
 const usersController = {
   index: (req, res) => {

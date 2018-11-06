@@ -1,5 +1,5 @@
-const Skill = require('../models/Skill')
-const Task = require('../models/Task')
+const Skill = require('../Models/Skill')
+const Task = require('../Models/Task')
 
 const tasksController = {
     index: (req, res) => {
